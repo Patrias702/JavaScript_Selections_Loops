@@ -3,10 +3,10 @@
 // Exercise 1: Ignore Even
 
 
-for (i = 0; i < 100; i++){
-    if (i % 2 == 0){
-        continue;
-    } else{
+for (let i = 0; i < 100; i++)       {
+    if (i % 2 == 0) {
+        continue;   
+    } else {
         console.log(i);
     }
     
@@ -31,67 +31,67 @@ for ( i = 1; i < 100; i++) {
 
 // Exercise 3: Repeat With While and Do/While 
 
- let i = 1;
+ let x = 1;
 
- while (i < 100) {
-     if (i % 2 !== 0){
+ while (x < 100) {
+     if (x % 2 !== 0){
         console.log(i);
  }
 
- i++;
+x++;
 }
 
-let x =1;
+let y =1;
 
 do{
-    if (x % 2 !==0){
-        console.log(x);
+    if (y % 2 !==0){
+        console.log(y);
     }
 
-    x++;
-} while (x < 100);
+    y++;
+} while (y< 100);
 
 
 
-let i = 1;
+let a = 1;
 
-while ( i <= 100){
+while ( a <= 100){
     let output = "";
 
-    if (i % 3 == 0){
+    if (a % 3 == 0){
         output += "FIZZ";
     }
 
-    if (i % 5 == 0) {
+    if (a % 5 == 0) {
         output += "BUZZ";
     }
 
-    console.log(`${i} $ {output}`);
+    console.log(`${y} $ {output}`);
 
 
-    i++;
+    a++;
 
 }
 
 
-let x = 1;
+let b = 1;
 
 do {
     let output = "";
 
-    if (x % 3 == 0) {
+    if (b % 3 == 0) {
         output += "FIZZ";
     }
 
-    if ( x % 5 == 0) {
+    if ( b % 5 == 0) {
         output += "BUZZ";
     }
 
 
-    console.log(`${x} ${output}`);
+    console.log(`${b} ${output}`);
 
-    x++;
-} while (x <= 100);
+    b++;
+} while (b <= 100);
 
 
 
