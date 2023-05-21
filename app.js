@@ -33,65 +33,46 @@ for ( i = 1; i < 100; i++) {
 
  let x = 1;
 
- while (x < 100) {
-     if (x % 2 !== 0){
-        console.log(i);
+ while (x <= 100) {
+    let output= "";
+    
+    if (x % 3 == 0){
+        output += "FIZZ";
  }
+
+ if (x % 5 == 0) {
+     output += "BUZZ";
+ }
+
+ console.log(`${x} ${output}`);
 
 x++;
 }
 
 let y =1;
 
-do{
-    if (y % 2 !==0){
-        console.log(y);
+do {
+
+    let output = "";
+    
+    if (y % 3 ==0){
+        output += "FIZZ";
     }
 
-    y++;
+    if (y % 5 == 0){
+        output += "BUZZ";
+
+    }
+
+   
+console.log(`${y} ${output}`);
+ 
+y++;
 } while (y< 100);
 
 
 
-let a = 1;
 
-while ( a <= 100){
-    let output = "";
-
-    if (a % 3 == 0){
-        output += "FIZZ";
-    }
-
-    if (a % 5 == 0) {
-        output += "BUZZ";
-    }
-
-    console.log(`${y} $ {output}`);
-
-
-    a++;
-
-}
-
-
-let b = 1;
-
-do {
-    let output = "";
-
-    if (b % 3 == 0) {
-        output += "FIZZ";
-    }
-
-    if ( b % 5 == 0) {
-        output += "BUZZ";
-    }
-
-
-    console.log(`${b} ${output}`);
-
-    b++;
-} while (b <= 100);
 
 
 
